@@ -11,7 +11,8 @@ var concat = require('gulp-concat');
 
 var paths = {
     scripts: __dirname + '/../swagsite/themes/appsforghent/assets/js',
-    styles: __dirname + '/../swagsite/themes/appsforghent/assets/css'
+    styles: __dirname + '/../swagsite/themes/appsforghent/assets/css',
+    images: __dirname + '/../swagsite/themes/appsforghent/assets/images'
 };
 
 gulp.task('serve', ['build'], function() {
@@ -28,12 +29,12 @@ gulp.task('serve', ['build'], function() {
 });
 
 // Jobs
-var defaultJobs = ['sass', 'js'];
+var defaultJobs = ['sass', 'js', 'images'];
 gulp.task('default', defaultJobs);
 gulp.task('build', defaultJobs);
 
 gulp.task('sass', function() {
-    return gulp.src(__dirname + '/css/*.scss')
+    return gulp.src(__dirname + '/css/*.css')
     .on('error', standardHandler)
     .pipe(
         sass( {
@@ -52,6 +53,12 @@ gulp.task('js', function() {
     .pipe(uglify())
     .on('error', standardHandler)
     .pipe(gulp.dest(paths.scripts))
+});
+
+gulp.task('images', function() {
+    return gulp.src([__dirname + '/images/*.png'])
+    .on('error', standardHandler)
+    .pipe(gulp.dest(paths.images))
 });
 
 function standardHandler(err){
