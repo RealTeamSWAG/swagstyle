@@ -135,6 +135,21 @@ nav {
     color: black;
 }
 
+.nav-low {
+    line-height: 5rem;
+
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+
+    color: black;
+}
+
+.nav-low:hover {
+    color: #68ceb5;
+}
+
 #right {
     float: right;
 }
@@ -297,4 +312,65 @@ h2 {
 
    display: block;
    margin: auto;
+}
+
+/*
+ * SPEAKERS
+ */
+
+.container {
+    width: 95%;
+    margin: 5rem auto;
+}
+
+.flip-container {
+    perspective: 1000;
+    float: left;
+    margin-bottom: 3rem;
+}
+
+.flip-container:not(:nth-child(3n)) {
+    margin-right: 2%;
+}  
+
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+    width: 32%;
+    height: 480px;
+}
+
+/* flip speed goes here */
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+    backface-visibility: hidden;
+    width: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+    background-color: white;
+}
+
+/* back, initially hidden pane */
+.back {
+    transform: rotateY(180deg);
+    background-color: #68ceb5;
 }
