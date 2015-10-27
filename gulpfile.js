@@ -10,7 +10,7 @@ var uglify = require('gulp-uglifyjs');
 var concat = require('gulp-concat');
 
 var paths = {
-    scripts: __dirname + '/../swagsite/themes/appsforghent/assets/js',
+    scripts: __dirname + '/../swagsite/themes/appsforghent/assets/javascript',
     styles: __dirname + '/../swagsite/themes/appsforghent/assets/css',
     images: __dirname + '/../swagsite/themes/appsforghent/assets/images'
 };
