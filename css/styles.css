@@ -261,17 +261,95 @@ h2 {
 
 /*
  * HOMEPAGE
+ * short info block
+ */
+
+#short-info {
+    background-color: #383838;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    font-family: 'Montserrat', sans-serif;
+    width: 60%;
+    padding: 8rem 20%;
+}
+
+#short-info h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+#short-info ul {
+    list-style-type: circle;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 4rem;
+    margin-bottom: 1rem;
+}
+
+#when-where {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: solid white 0.2rem;
+}
+
+#when, #where {
+    float: left;
+    width: 50%;
+}
+
+#when img, #where img {
+    float: left;
+}
+
+#when h4, #where h4 {
+    padding-left: 3rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #626eb5;
+}
+
+#when p, #where p {
+    padding-top: 1rem;
+    padding-left: 3rem;
+}
+
+#where p:last-of-type {
+    padding-top: 0;
+}
+
+/*
+ * HOMEPAGE
  * speakers and programme
  */
 
 #speakers-and-programme {
     width: 100%;
+    height: 50rem;
 }
 
 #speaker, #programme {
     position: relative;
     width: 50%;
+    height: 50rem;
     float: left;
+}
+
+#speaker {
+    background: url(../images/speakers.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+}
+
+#programme {
+    background: url(../images/programme.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
 }
 
 #speaker a, #programme a {
@@ -294,31 +372,62 @@ h2 {
     background-color: #68ceb5;
 }
 
-#speaker img {
-    display: block;
-    float: left;
-    width: 33.32%;
-    height: 33.32%;
+/*
+ * HOMEPAGE
+ * partners
+ */
+
+#partners {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 5rem 0;
 }
 
-#programme img {
-    width: 100%;
+#partners h3 {
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 3rem;
+    color: #626eb5;
 }
 
 /*
- * VIDEO HOMEPAGE
+ * FOOTER
  */
 
-#video {
-    width: 100%;
+footer {
+    position: relative;
+    background-color: #383838; 
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
-#youtube {
-   width: 50%;
-   height: 50rem;
+footer h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 5rem 0;
+    color: #6ecfb7;     
+}
 
-   display: block;
-   margin: auto;
+#organisors {
+    padding-bottom: 20rem;
+}
+
+footer p {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    color: white;
+}
+
+footer span {
+    color: #6ecfb7;
+}
+
+#decoration {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 30%;
 }
 
 /*
