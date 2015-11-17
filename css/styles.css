@@ -194,7 +194,9 @@ h2 {
 }
 
 #openBelgium {
-    padding-top: 15rem;
+    position: absolute;
+    bottom: 60%;
+    width: 100%;
 }
 
 #openBelgium img {
@@ -205,9 +207,11 @@ h2 {
 }
 
 #time {
+    position: absolute;
+    bottom: 35%;
+    width: 100%;
+
     text-align: center;
-    margin-top: 10rem;
-    margin-bottom: 20rem;
     line-height: 8rem;
 
     font-size: 2.5rem;
@@ -228,6 +232,8 @@ h2 {
 }
 
 #tickets {
+    position: absolute;
+    bottom: 15%;
     width: 100%;
     text-align: center;
 }
@@ -249,14 +255,16 @@ h2 {
 }
 
 #arrow-down {
-    margin-top: 10rem;
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
 }
 
 #arrow-down img {
     display:block;
     margin:auto;
 
-    width: 5%;
+    width: 7rem;
 }
 
 /*
@@ -953,6 +961,26 @@ footer span {
 }
 .timetable .time-entry:hover {
     background-color: #383838;
+}
+
+@media screen and (max-height: 600px) {
+    #openBelgium {
+        bottom: 50%;
+    }
+
+    #openBelgium img {
+        height: 15%;
+    }
+
+    #time {
+        bottom: 30%;
+        line-height: 5rem;
+        font-size: 2rem;
+    }
+
+    #time span {
+        font-size: 5rem;
+    }
 }
 
 @media screen and (max-width: 1370px) {
