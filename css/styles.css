@@ -78,7 +78,7 @@ a:focus {
 #hero-small {
     width: 100%;
     height: 50%;
-    min-height: 40rem;
+    min-height: 30rem;
 
     margin-top: -12rem;
 
@@ -126,7 +126,6 @@ a:focus {
 
 #left {
     float: left;
-    width: 5rem;
 }
 
 #left img {
@@ -176,7 +175,7 @@ a:focus {
     float: right;
 }
 
-#right a {
+#right li a {
     line-height: 5rem;
     padding: 0.5rem 1rem;
 
@@ -189,7 +188,92 @@ a:focus {
     background-color: #c93f3f;
 }
 
-#right a:hover {
+#right li a:hover {
+    background-color: #626eb5;
+}
+
+#hamburger-menu-logo {
+    display: none;
+}
+
+#hamburger-menu-logo img {
+    width: 5rem;
+}
+
+#quit {
+    position: absolute;
+    left: calc(97.5% - 5rem);
+    top: 1rem;
+}
+
+#quit img {
+    width: 5rem;
+}
+
+#hamburger-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 15;
+
+    background-color: #83b2de;
+}
+
+#hamburger-menu ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+}
+
+#hamburger-menu li:not(:first-child) {
+    margin-top: 20%;
+}
+
+#hamburger-menu a {
+    position: relative;   
+
+    font-size: 3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+
+    color: white;
+    text-decoration: none;
+}
+
+#hamburger-menu a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#hamburger-menu li:not(:last-of-type) a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+#hamburger-menu li:last-of-type a {
+    padding: 1rem 2rem;
+    background-color: #c93f3f;
+}
+
+#hamburger-menu li:last-of-type a:hover {
     background-color: #626eb5;
 }
 
@@ -701,6 +785,20 @@ footer a {
     background-color: white;
 }
 
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    z-index: 10;
+}
+
+.overlay:hover {
+    background-color: rgba(131, 178, 222, 0.7);
+}
+
 .theme {
     font-size: 2rem;
     text-transform: uppercase;
@@ -716,7 +814,7 @@ footer a {
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
 
-    margin-bottom: 1.5rem;
+    margin: 1rem 0;
 }
 
 .by {
@@ -746,9 +844,13 @@ footer a {
     margin-bottom: 2rem;
 }
 
+.blogpost-image {
+    position: relative;
+    width: 100%;
+}
+
 .blogpost img {
     width: 100%;
-    margin-bottom: 1rem;
 }
 
 .blogpost:nth-child(2n+1) {
@@ -795,16 +897,21 @@ footer a {
     font-size: 2rem;
     text-transform: uppercase;
     border-top: solid black 1rem;
+    margin-bottom: 1rem;
 }
 
 #social-media img {
     width: 50%;
     margin: auto;
-    margin-top: 2rem;
+    margin-top: 0.5rem;
 }
 
-#social-media img:last-of-type {
-    margin-top: 0.5rem;
+#social-media img:hover {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 
 #blogpost-detail {
@@ -1059,6 +1166,10 @@ footer a {
     #time span {
         font-size: 5rem;
     }
+
+    #hamburger-menu a {
+        font-size: 2rem;
+    }
 }
 
 @media screen and (max-width: 1370px) {
@@ -1112,7 +1223,37 @@ footer a {
     }
 }
 
+@media screen and (max-width: 900px) {
+    #center {
+        display: none;
+    }
+
+    #right li {
+        display: none;
+    }
+
+    #hamburger-menu-logo {
+        display: block;
+    }
+
+    #navigation-fixed {
+        position: relative;
+    }
+
+    #navbar {
+        margin-top: 12rem;
+    }
+
+    #hero-small #title {
+        padding-top: 0;
+    }
+}
+
 @media screen and (max-width: 680px) {
+    h2 {
+        font-size: 5rem;
+    }
+
     .speaker {
         width: 100%;
     }
@@ -1162,6 +1303,18 @@ footer a {
 }
 
 @media screen and (max-width: 500px) {
+    h2 {
+        font-size: 4rem;
+    }
+
+    #hamburger-menu ul {
+        width: 80%;
+    }
+
+    #hamburger-menu li:not(:first-child) {
+        margin-top: 10%;
+    }
+
     #time {
         line-height: 3.5rem;
         font-size: 1.3rem;
@@ -1210,6 +1363,10 @@ footer a {
 }
 
 @media screen and (max-width: 340px) {
+    h2 {
+        font-size: 3rem;
+    }
+
     #time {
         line-height: 2rem;
         font-size: 1rem;
@@ -1254,5 +1411,13 @@ footer a {
 
     #partners-logos img {
         width: 40%;
+    }
+
+    #hamburger-menu a {
+        font-size: 2rem;
+    }
+
+    #hamburger-menu li:not(:first-child) {
+        margin-top: 20%;
     }
 }
