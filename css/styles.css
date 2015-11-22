@@ -207,7 +207,17 @@ a:focus {
 }
 
 #quit img {
-    width: 5rem;
+    height: 5rem;
+}
+
+#hamburger-menu #home {
+    position: absolute;
+    left: 2.5%;
+    top: 1rem;
+}
+
+#hamburger-menu #home img {
+    height: 5rem;
 }
 
 #hamburger-menu {
@@ -1240,7 +1250,7 @@ footer a {
         position: relative;
     }
 
-    #navbar {
+    #hero-small #navbar {
         margin-top: 12rem;
     }
 
