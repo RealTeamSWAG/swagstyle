@@ -1070,6 +1070,31 @@ footer a {
 }
 
 /*
+ * ABOUT
+ */
+
+.about-question:first-child h3 {
+    margin-top: 0rem;
+}
+
+.about-question h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    color: #2f4086;
+    border-bottom: solid #2f4086 0.5rem;
+
+    display:inline-block;
+    margin: 3rem auto;
+}
+
+.about-question p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    color: #2f4086;
+    margin-left: 7rem;
+}
+
+/*
  * TIMETABLE
  */
 
@@ -1442,6 +1467,18 @@ footer a {
     #social-media h3 {
         font-size: 1.5rem;
     }
+
+    .about-question {
+        text-align: center;
+    }
+
+    .about-question h3 {
+        font-size: 2.3rem;
+    }
+
+    .about-question p {
+        margin-left: 0;
+    }
 }
 
 @media screen and (max-width: 680px) {
@@ -1704,6 +1741,11 @@ footer a {
 
     #author h3 {
         font-size: 1.7rem;
+    }
+
+    .about-question h3 {
+        font-size: 2rem;
+        border-bottom: none;
     }
 }
 
