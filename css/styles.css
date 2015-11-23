@@ -1020,6 +1020,55 @@ footer a {
     margin-top: 2rem;
 }
 
+
+/*
+ * EVENT
+ */
+
+#event h3 {
+    margin-bottom: 3rem;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    color: #2f4086;
+}
+
+#event ul {
+    width: 22.5%;
+    margin-left: 2.5%;
+    margin-right: 5%;
+    float: left;
+    
+}
+
+#event li {
+    font-family: 'Montserrat', sans-serif;
+    color: #2f4086;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-bottom: 2.5rem;
+    padding-left: 5%;
+    list-style-type: circle;
+}
+
+#event p {
+    width: 70%;
+    float: left;
+    font-family: 'Montserrat', sans-serif;
+    color: #2f4086;
+    font-size: 1.3rem;
+}
+
+#speakers-title {
+    margin: 4rem 0;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    color: #2f4086;
+}
+
 /*
  * TIMETABLE
  */
@@ -1287,6 +1336,7 @@ footer a {
 @media screen and (max-width: 1000px) {
     .speaker {
         width: 48%;
+        margin-right: 0;
     }
 
     .speaker:not(:nth-child(3n)) {
@@ -1295,6 +1345,14 @@ footer a {
 
     .speaker:not(:nth-child(2n)) {
         margin-right: 4%;
+    }
+
+    #speakers .speaker:not(:nth-child(2n+1)) {
+        margin-right: 4% !important;
+    }
+
+    #speakers .speaker:not(:nth-child(2n)) {
+        margin-right: 0rem !important;
     }
 
     #programme, #speaker {
@@ -1342,6 +1400,17 @@ footer a {
 }
 
 @media screen and (max-width: 900px) {
+    #event ul {
+        margin-left: 7.5%;
+        margin-right: 0%;
+        width: 92.5%;
+    }
+
+    #event p {
+        text-align: center;
+        width: 100%;
+    }
+
     #center {
         display: none;
     }
@@ -1376,6 +1445,14 @@ footer a {
 }
 
 @media screen and (max-width: 680px) {
+    #event h3 {
+        font-size: 3rem;
+    }
+
+    #speakers h3 {
+        font-size: 3rem;
+    }
+
     h2 {
         font-size: 5rem;
     }
@@ -1534,6 +1611,14 @@ footer a {
 }
 
 @media screen and (max-width: 500px) {
+    #event h3 {
+        font-size: 2.5rem;
+    }
+
+    #speakers h3 {
+        font-size: 2.5rem;
+    }
+
     h2 {
         font-size: 4rem;
     }
@@ -1623,6 +1708,14 @@ footer a {
 }
 
 @media screen and (max-width: 340px) {
+    #event h3 {
+        font-size: 2rem;
+    }
+
+    #speakers h3 {
+        font-size: 2rem;
+    }
+
     h2 {
         font-size: 3rem;
     }
