@@ -107,7 +107,7 @@ a:focus {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 2;
+    z-index: 50;
 
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -227,7 +227,7 @@ a:focus {
     top: 0;
     width: 100%;
     height: 100%;
-    z-index: 15;
+    z-index: 100;
 
     background-color: #83b2de;
 }
@@ -245,7 +245,7 @@ a:focus {
     margin-top: 20%;
 }
 
-#hamburger-menu a {
+#hamburger-menu li a {
     position: relative;   
 
     font-size: 3rem;
@@ -257,7 +257,7 @@ a:focus {
     text-decoration: none;
 }
 
-#hamburger-menu a:before {
+#hamburger-menu li a:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -761,15 +761,58 @@ footer a {
  * BLOG
  */
 
- #blog-container {
+#blog-container {
     text-align: center;
- }
+}
+
+#categories {
+    margin-bottom: 7rem;
+}
+
+#categories li {
+    display: inline;
+}
+
+#categories li:not(:last-of-type) {
+    margin-right: 15%;
+}
+
+#categories a {
+    position: relative;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    color: #2f4086;
+    text-decoration: none;
+}
+
+#categories a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #2f4086;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#categories a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
 
 .blog {
     font-size: 3.5rem;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
-    color: #83b2de;
+    color: #2f4086;
 
     margin: 2rem;
 }
@@ -806,7 +849,7 @@ footer a {
 }
 
 .overlay:hover {
-    background-color: rgba(131, 178, 222, 0.7);
+    background-color: rgba(6, 204, 160, 0.2);
 }
 
 .theme {
@@ -833,7 +876,7 @@ footer a {
 }
 
 .by span {
-    color: #83b2de;
+    color: #06cca0;
 }
 
 #otherBlogposts {
@@ -879,11 +922,16 @@ footer a {
 }
 
 #blogpost-detail-info #blogpost-category {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
 }
 
 #blogpost-title {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 #blogpost-by {
@@ -904,7 +952,7 @@ footer a {
 
 #social-media h3 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-transform: uppercase;
     border-top: solid black 1rem;
     margin-bottom: 1rem;
@@ -942,6 +990,13 @@ footer a {
     padding-top: 35rem;
     margin-top: -32rem;
     padding-bottom: 3rem;
+
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#blogpost-detail #text p {
+    margin-bottom: 1rem;
 }
 
 #author {
@@ -954,7 +1009,7 @@ footer a {
 
 #author h3 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-transform: uppercase;
     border-top: solid black 1rem;
 }
@@ -1194,11 +1249,38 @@ footer a {
     .speaker:not(:nth-child(3n)) {
         margin-right: 2%;
     }
+
+    #categories li:not(:last-of-type) {
+        margin-right: 10%;
+    }
+
+    .blogpost-title {
+        font-size: 2rem;
+    }
 }
 
 @media screen and (max-width: 1200px) {
     #center li:not(:last-of-type) {
         margin-right: 5rem;
+    }
+
+    #blogpost-detail {
+        margin: 3rem 1% 5rem;
+    }
+
+    #social-media {
+        margin-left: 1%;
+        width: 10.5%;
+    }
+
+    #author {
+        margin-right: 1%;
+        width: 10.5%;
+    }
+
+    #blogpost-detail #text {
+        padding-top: 25rem;
+        margin-top: -22rem;
     }
 }
 
@@ -1231,6 +1313,32 @@ footer a {
         width: 15rem;
         height: 15rem;
     }
+
+    #categories li:not(:last-of-type) {
+        margin-right: 5%;
+    }
+
+    .blogpost {
+        width: 100%;
+    }
+
+    .blogpost:nth-child(2n+1) {
+        margin-right: 0;
+    }
+
+    #otherBlogposts {
+        padding-top: 22rem;
+        margin-top: -20rem;
+    }
+
+    #overlay {
+        width: 60%;
+    }
+
+    #blogpost-detail #text {
+        padding-top: 15rem;
+        margin-top: -13rem;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -1256,6 +1364,14 @@ footer a {
 
     #hero-small #title {
         padding-top: 0;
+    }
+
+    #author h3 {
+        font-size: 1.5rem;
+    }
+
+    #social-media h3 {
+        font-size: 1.5rem;
     }
 }
 
@@ -1309,6 +1425,111 @@ footer a {
     footer p {
         left: 0;
         width: 100%;
+    }
+
+    #categories {
+        margin-bottom: 5rem;
+    }
+
+    #categories li {
+        display: block;
+    }
+
+    #categories li:not(:last-of-type) {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .blog {
+        display: none;
+    }
+
+    #latest div:first-child {
+        position: relative;
+        width: 100%;
+    }
+
+    #latest #overlay {
+        position: relative;
+        top: 0;
+        left: 0;
+        padding: 0 0;
+        width: 100%;
+
+        -webkit-transform: none;
+        transform: none;
+    }
+
+    #latest .theme {
+        display: none;
+    }
+
+    .blogpost-title {
+        font-size: 1.7rem;
+    }
+
+    .by {
+        font-size: 1.3rem;
+    }
+
+    #categories a {
+        font-size: 2rem;
+    }
+
+    #blogpost-detail-info {
+        width: 90%;
+        margin: 3rem auto;
+        text-align: center;
+    }
+
+    #blogpost-title {
+        font-size: 2.5rem;
+    }
+
+    #social-media {
+        margin-top: 0;
+        margin-left: 2.5%;
+        width: 95%;
+    }
+
+    #social-media h3 {
+        border-top: none;
+        font-size: 2rem;
+    }
+
+    #social-media img {
+        width: 4rem;
+    }
+
+    #blogpost-detail {
+        margin-left: 2.5%;
+        width: 95%;
+        margin-bottom: 2rem;
+    }
+
+    #author {
+        margin-top: 0;
+        margin-left: 2.5%;
+        margin-right: 0;
+        margin-bottom: 3rem;
+        width: 95%;
+    }
+
+    #author h3 {
+        border-top: none;
+        font-size: 2rem;
+    }
+
+    #author img {
+        width: 12rem;
+    }
+
+    #blogpost-detail #text {
+        font-size: 1.15rem;
+    }
+
+    #blogpost-detail #text p {
+        text-align: center;
     }
 }
 
@@ -1369,6 +1590,35 @@ footer a {
 
     #map {
         height: 20rem;
+    }
+
+    .blogpost-title {
+        font-size: 1.5rem;
+    }
+
+    .by {
+        font-size: 1rem;
+    }
+
+    #blogpost-detail #text {
+        padding-top: 10rem;
+        margin-top: -8rem;
+    }
+
+    #blogpost-title {
+        font-size: 2rem;
+    }
+
+    #blogpost-detail-info #blogpost-category {
+        font-size: 1.5rem;
+    }
+
+    #social-media h3 {
+        font-size: 1.7rem;
+    }
+
+    #author h3 {
+        font-size: 1.7rem;
     }
 }
 
