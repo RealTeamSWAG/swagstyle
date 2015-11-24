@@ -1191,9 +1191,9 @@ footer a {
     border-right: 5px solid transparent
 }
 .timetable aside li {
-    padding: 0 15px;
+    padding: 5px 15px;
     background-color: #EFEFEF;
-    line-height: 46px
+    line-height: 32px
 }
 .timetable aside li:not(:last-of-type) {
     border-bottom: 1px solid #fff
@@ -1203,7 +1203,7 @@ footer a {
     max-width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
+
     word-wrap: normal;
 
     font-size: 2rem;
@@ -1215,7 +1215,7 @@ footer a {
 }
 .timetable aside li,
 .timetable time li {
-    height: 46px
+    height: 104px
 }
 .timetable section {
     width: 75%;
@@ -1248,7 +1248,7 @@ footer a {
     position: relative
 }
 .timetable section header li:not(:last-of-type) {
-    width: 96px
+    width: 254px
 }
 .timetable section header li .time-label {
     display: block;
@@ -1293,7 +1293,7 @@ footer a {
     border-bottom: none
 }
 .timetable ul.room-timeline li:first-child .time-entry {
-    height: 44px
+    height: 102px
 }
 .timetable ul.room-timeline li:after,
 .timetable ul.room-timeline li:before {
