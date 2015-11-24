@@ -1020,10 +1020,15 @@ footer a {
     margin-top: 2rem;
 }
 
-
 /*
  * EVENT
  */
+
+#event {
+    max-width: 100rem;
+    margin: auto;
+    margin-bottom: 5rem;
+}
 
 #event h3 {
     margin-bottom: 3rem;
@@ -1073,6 +1078,11 @@ footer a {
  * ABOUT
  */
 
+#about {
+    max-width: 100rem;
+    margin: auto;
+}
+
 .about-question:first-child h3 {
     margin-top: 0rem;
 }
@@ -1092,6 +1102,57 @@ footer a {
     font-size: 1.3rem;
     color: #2f4086;
     margin-left: 7rem;
+}
+
+/*
+ * PARTNERS
+ */
+
+#partners-page h4 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    color: #2f4086;
+}
+
+.logos .square {
+    float: left;
+    position: relative;
+    width: 19%;
+    padding-bottom: 19%;
+    margin-right: 1.25%;
+    overflow: hidden;
+}
+
+.logos .square:nth-child(5n) {
+    margin-right: 0;
+}
+
+.logos .content {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.logos .table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.logos .table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.logos img {
+    width: auto;
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
+    margin: auto;
 }
 
 /*
@@ -1356,6 +1417,21 @@ footer a {
         padding-top: 25rem;
         margin-top: -22rem;
     }
+
+    .logos .square {
+        width: 23.5%;
+        padding-bottom: 23.5%;
+        margin-right: 2%;
+        overflow: hidden;
+    }
+
+    .logos .square:nth-child(4n) {
+        margin-right: 0;
+    }
+
+    .logos .square:nth-child(5n) {
+        margin-right: 2%;
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -1478,6 +1554,21 @@ footer a {
 
     .about-question p {
         margin-left: 0;
+    }
+
+    .logos .square {
+        width: 32%;
+        padding-bottom: 32%;
+        margin-right: 2%;
+        overflow: hidden;
+    }
+
+    .logos .square:nth-child(3n) {
+        margin-right: 0;
+    }
+
+    .logos .square:nth-child(4n) {
+        margin-right: 2%;
     }
 }
 
@@ -1747,6 +1838,20 @@ footer a {
         font-size: 2rem;
         border-bottom: none;
     }
+
+    .logos .square {
+        width: 49%;
+        padding-bottom: 49%;
+        margin-right: 2%;
+    }
+
+    .logos .square:nth-child(2n) {
+        margin-right: 0;
+    }
+
+    .logos .square:nth-child(3n) {
+        margin-right: 2%;
+    }
 }
 
 @media screen and (max-width: 340px) {
@@ -1815,4 +1920,14 @@ footer a {
     #hamburger-menu li:not(:first-child) {
         margin-top: 20%;
     }
+
+    /*.logos .square {
+        width: 100%;
+        padding-bottom: 100%;
+        margin-right: 0;
+    }
+
+    .logos .square:nth-child(3n) {
+        margin-right: 0;
+    }*/
 }
