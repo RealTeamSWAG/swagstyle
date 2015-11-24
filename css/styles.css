@@ -1292,7 +1292,7 @@ footer a {
 .timetable ul.room-timeline li:not(:last-of-type) {
     border-bottom: none
 }
-.timetable ul.room-timeline li:first-child .time-entry {
+.timetable ul.room-timeline li .time-entry {
     height: 102px
 }
 .timetable ul.room-timeline li:after,
