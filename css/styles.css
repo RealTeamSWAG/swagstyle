@@ -849,7 +849,7 @@ footer a {
 }
 
 .overlay:hover {
-    background-color: rgba(6, 204, 160, 0.2);
+    background-color: rgba(47, 64, 134, 0.2);
 }
 
 .theme {
@@ -876,7 +876,7 @@ footer a {
 }
 
 .by span {
-    color: #06cca0;
+    color: #2f4086;
 }
 
 #otherBlogposts {
@@ -939,13 +939,12 @@ footer a {
 }
 
 #blogpost-by span {
-    color: #68ceb5;
+    color: #2f4086;
 }
 
 #social-media {
     float: left;
     width: 7.5%;
-    text-align: center;
     margin-top: 8rem;
     margin-left: 2.5%;
 }
@@ -955,6 +954,7 @@ footer a {
     font-size: 1.8rem;
     text-transform: uppercase;
     border-top: solid black 1rem;
+    padding-top: 1rem;
     margin-bottom: 1rem;
 }
 
@@ -991,7 +991,7 @@ footer a {
     margin-top: -32rem;
     padding-bottom: 3rem;
 
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -1002,7 +1002,7 @@ footer a {
 #author {
     float: left;
     width: 7.5%;
-    text-align: center;
+    text-align: right;
     margin-top: 8rem;
     margin-right: 2.5%;
 }
@@ -1012,6 +1012,7 @@ footer a {
     font-size: 1.8rem;
     text-transform: uppercase;
     border-top: solid black 1rem;
+    padding-top: 1rem;
 }
 
 #author img {
@@ -1692,6 +1693,7 @@ footer a {
     }
 
     #social-media {
+        text-align: center;
         margin-top: 0;
         margin-left: 2.5%;
         width: 95%;
@@ -1717,6 +1719,7 @@ footer a {
         margin-left: 2.5%;
         margin-right: 0;
         margin-bottom: 3rem;
+        text-align: center;
         width: 95%;
     }
 
@@ -1920,14 +1923,4 @@ footer a {
     #hamburger-menu li:not(:first-child) {
         margin-top: 20%;
     }
-
-    /*.logos .square {
-        width: 100%;
-        padding-bottom: 100%;
-        margin-right: 0;
-    }
-
-    .logos .square:nth-child(3n) {
-        margin-right: 0;
-    }*/
 }
