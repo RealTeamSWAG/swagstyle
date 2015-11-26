@@ -1248,7 +1248,7 @@ footer a {
     position: relative
 }
 .timetable section header li:not(:last-of-type) {
-    width: 254px
+    width: 288px
 }
 .timetable section header li .time-label {
     display: block;
