@@ -887,6 +887,13 @@ footer a {
     margin-top: -30rem;
 }
 
+#otherBlogposts-no-latest {
+    background-color: white;
+    padding-bottom: 2rem;
+    padding-top: 3rem;
+    margin-top: -3rem;
+}
+
 .category {
     width: 80%;
     margin: auto;
