@@ -10,6 +10,7 @@ html {
 
 body {
     height: 100%;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .clearfix:after {
@@ -1924,3 +1925,46 @@ footer a {
         margin-top: 20%;
     }
 }
+
+
+
+/*
+ * PAGINATION
+ */
+ 
+ .pagination {
+     margin-top: 2em;
+     text-align: center;
+ }
+ 
+ .pagination > li {
+     display: inline;
+     font-size: 1.5em;
+     padding: 0.5em 0.7em;
+     background-color: #FFF;   
+     margin: 0.2em;
+     transition: 200ms background-color;
+ }
+ 
+ .pagination > li:hover,  .pagination > li.active {
+     background-color: #383838;
+ }
+ 
+  .pagination > li > a,   
+  .pagination > li > a:active,   
+  .pagination > li > a:visited {
+      text-decoration: none;
+      color: #000;
+  }
+  
+  .pagination > li.active > a,   
+  .pagination > li.active > a:hover,   
+  .pagination > li.active > a:active,   
+  .pagination > li.active > a:visited,
+  .pagination > li:hover > a,   
+  .pagination > li:hover > a:hover,   
+  .pagination > li:hover > a:active,   
+  .pagination > li:hover > a:visited {
+      text-decoration: none;
+      color: #FFF;
+  }
