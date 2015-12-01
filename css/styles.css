@@ -407,7 +407,7 @@ h2 {
     list-style-type: circle;
     font-size: 1.5rem;
     font-weight: bold;
-    margin-left: 4rem;
+    margin-left: 2rem;
     margin-bottom: 1rem;
 }
 
@@ -438,7 +438,7 @@ h2 {
     padding-left: 3rem;
 }
 
-#where p:last-of-type {
+#where p:last-of-type, #when p:last-of-type {
     padding-top: 0;
 }
 
@@ -510,11 +510,12 @@ input {font-size: 15px;}
 #mc_embed_signup_scroll{text-align: center; width: 100%;}
 #mc_embed_signup form {padding: 5rem 0 !important; width: 60% !important; margin: auto;}
 #mc_embed_signup .mc-field-group {clear: none; width: 44.5rem; margin: auto; text-align: center; padding-bottom: 0 !important;}
-#mc_embed_signup .button {clear: none; background-color: #c93f3f; border-radius: 0;}
+#mc_embed_signup .button {clear: none; background-color: #c93f3f;}
 #mc_embed_signup .button:hover {background-color: #383838;}
 #mc_embed_signup .mc-field-group input:first-child {float: left; width: calc(80% - 2px) !important; margin: 0 !important;}
 #mc_embed_signup div.mce_inline_error {width: 30%; margin: auto !important; text-align: center; padding: 5px 0 !important;}
-.mc-field-group #mc-embedded-subscribe {float: left !important; clear:none !important;width: 18% !important; padding: 0 !important; height: 35px !important; background-color: #c93f3f !important;}
+.mc-field-group #mc-embedded-subscribe {float: left !important; clear:none !important; border-radius: 0 !important; width: 18% !important; padding: 0 !important; height: 35px !important; background-color: #c93f3f !important;}
+.mc-field-group #mc-embedded-subscribe:hover {background-color: #626eb5 !important;}
 
 /*
  * HOMEPAGE
@@ -1627,7 +1628,7 @@ footer a {
     #short-info h3 {
         font-size: 2.5rem;
     }
-    
+
     .speaker {
         width: 48%;
         margin-right: 0;
@@ -1938,6 +1939,10 @@ footer a {
 }
 
 @media screen and (max-width: 500px) {
+    #short-info ul {
+        margin-left: 5rem;
+    }
+
     #mc_embed_signup .mc-field-group input:first-child {
         float: left; width: calc(70% - 2px) !important;
     }
@@ -1992,7 +1997,7 @@ footer a {
         text-align: center;
     }
 
-    #short-info p {
+    #short-info-text {
         text-align: center;
     }
 
