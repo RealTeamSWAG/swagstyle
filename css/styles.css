@@ -592,12 +592,8 @@ footer h3 {
     height: 20rem;
     margin: auto;
     display:block;
-    background: transparent url('../images/logo-green-vertical.png') center top no-repeat;
+    background: transparent url('../images/logo-white.png') center top no-repeat;
     background-size: 100% 100%;
-}
-
-#organisors #logo-okb:hover {
-   background-image: url('../images/logo-green-red-vertical.png');
 }
 
 #organisors #CoC-page {
@@ -1052,12 +1048,21 @@ footer a {
     margin-top: -32rem;
     padding-bottom: 3rem;
 
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-family: 'Montserrat', sans-serif;
 }
 
 #blogpost-detail #text p {
     margin-bottom: 1rem;
+}
+
+#blogpost-detail #text a, #blogpost-detail #text a:active, #blogpost-detail #text a:visited {
+    text-decoration: none;
+    color: #626eb5;
+}
+
+#blogpost-detail #text a:hover {
+    color: #83b2de;
 }
 
 #blogpost-detail #text img.left {
@@ -1094,6 +1099,13 @@ footer a {
     width: 100%;
     margin: auto;
     margin-top: 2rem;
+    
+            
+    display: block;
+    max-width: 100%;
+    height: auto;
+    min-height: 100px;
+    min-width: 100px;
 }
 
 /*
@@ -1175,7 +1187,8 @@ footer a {
 
 .about-question p {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
+    line-height: 2rem;
     color: #2f4086;
     margin-left: 7rem;
 }
@@ -1877,11 +1890,11 @@ footer a {
     }
 
     #blogpost-detail #text {
-        font-size: 1.15rem;
+        font-size: 1.6rem;
     }
 
     #blogpost-detail #text p {
-        text-align: center;
+        text-align: left;
     }
 }
 
