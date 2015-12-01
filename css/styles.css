@@ -398,6 +398,7 @@ h2 {
 }
 
 #short-info h3 {
+    text-align: center;
     font-size: 3.5rem;
     font-weight: bold;
     margin-bottom: 1rem;
@@ -407,12 +408,19 @@ h2 {
     line-height: 2.2rem;
 }
 
+
 #short-info ul {
     list-style-type: circle;
     font-weight: bold;
-    margin-left: 2rem;
-    margin-bottom: 1rem;
-    text-align: left;
+    margin-bottom: 2rem;
+    display:inline-table;
+}
+
+#short-info ul li {
+    display: inline;
+    font-size: 2rem;
+    margin-right: 2rem;
+    text-transform: uppercase;
 }
 
 #when-where {
