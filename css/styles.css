@@ -390,25 +390,45 @@ h2 {
 #short-info {
     background-color: #383838;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-weight: lighter;
     font-family: 'Montserrat', sans-serif;
-    width: 60%;
-    padding: 8rem 20%;
+    width: 50%;
+    padding: 8rem 25%;
 }
 
 #short-info h3 {
+<<<<<<< HEAD
     font-size: 3.5rem;
+=======
+    text-align: center;
+    font-size: 2.5rem;
+>>>>>>> 3f0a3c78d6baeac482171dbb67ca440b7d2f59ca
     font-weight: bold;
     margin-bottom: 1rem;
+}
+
+#short-info-text {
+    line-height: 2.2rem;
 }
 
 #short-info ul {
     list-style-type: circle;
-    font-size: 1.5rem;
     font-weight: bold;
+<<<<<<< HEAD
     margin-left: 2rem;
     margin-bottom: 1rem;
+=======
+    margin-bottom: 2rem;
+    display:inline-table;
+}
+
+#short-info ul li {
+    display: inline;
+    font-size: 2rem;
+    margin-right: 2rem;
+    text-transform: uppercase;
+>>>>>>> 3f0a3c78d6baeac482171dbb67ca440b7d2f59ca
 }
 
 #when-where {
@@ -438,10 +458,13 @@ h2 {
     padding-left: 3rem;
 }
 
+<<<<<<< HEAD
 #where p:last-of-type, #when p:last-of-type {
     padding-top: 0;
 }
 
+=======
+>>>>>>> 3f0a3c78d6baeac482171dbb67ca440b7d2f59ca
 /*
  * HOMEPAGE
  * speakers and programme
@@ -499,7 +522,11 @@ h2 {
  * sign-up
  */
 
-#mc_embed_signup {background: #383838; color: white;}
+#mc_embed_signup {
+    background: #383838; 
+    color: white;
+    padding: 3rem;
+    }
 #mc_embed_signup a {text-decoration: none; color: #c93f3f; font-size: 12px; font-family: 'Montserrat';}
 #mc_embed_signup a:hover {color: #383838;}
 #mc_embed_signup p:last-of-type {margin-bottom: 3rem;}
@@ -510,12 +537,50 @@ input {font-size: 15px;}
 #mc_embed_signup_scroll{text-align: center; width: 100%;}
 #mc_embed_signup form {padding: 5rem 0 !important; width: 60% !important; margin: auto;}
 #mc_embed_signup .mc-field-group {clear: none; width: 44.5rem; margin: auto; text-align: center; padding-bottom: 0 !important;}
+<<<<<<< HEAD
 #mc_embed_signup .button {clear: none; background-color: #c93f3f;}
 #mc_embed_signup .button:hover {background-color: #383838;}
 #mc_embed_signup .mc-field-group input:first-child {float: left; width: calc(80% - 2px) !important; margin: 0 !important;}
 #mc_embed_signup div.mce_inline_error {width: 30%; margin: auto !important; text-align: center; padding: 5px 0 !important;}
 .mc-field-group #mc-embedded-subscribe {float: left !important; clear:none !important; border-radius: 0 !important; width: 18% !important; padding: 0 !important; height: 35px !important; background-color: #c93f3f !important;}
 .mc-field-group #mc-embedded-subscribe:hover {background-color: #626eb5 !important;}
+=======
+#mc_embed_signup .button {
+    clear: none; 
+    background-color: #c93f3f; 
+    border-radius: 0!important;
+    margin-left: 5px!important;
+    }
+#mc_embed_signup .button:focus {outline:0 !important;}
+
+#mc_embed_signup .button:hover {background-color: #383838;}
+#mc_embed_signup .mc-field-group input:first-child {
+    float: left; 
+    width: calc(80% - 9px) !important; 
+    margin: 0 !important;
+}
+    
+#mc_embed_signup .mc-field-group input:first-child:focus {
+    outline:0 !important;
+}
+#mc_embed_signup div.mce_inline_error {
+    display: none!important;
+}
+.mc-field-group #mc-embedded-subscribe {
+    float: left !important; 
+    clear:none !important;
+    width: 18% !important; 
+    padding: 0 !important; 
+    height: 35px !important; 
+    background-color: #c93f3f !important;}
+
+#mc_embed_signup div.response {
+    color: white!important;
+    padding: 0!important;
+    margin: 0!important;
+    text-transform: initial!important;
+}
+>>>>>>> 3f0a3c78d6baeac482171dbb67ca440b7d2f59ca
 
 /*
  * HOMEPAGE
@@ -1080,18 +1145,19 @@ footer a {
     color: #83b2de;
 }
 
+#blogpost-detail #text img {
+    display: block;
+    margin: 1rem auto;
+}
+
 #blogpost-detail #text img.left {
     float: left;
+    margin: 1rem 1rem 1rem 0;
 }
 
 #blogpost-detail #text img.right {
     float: right;
-}
-
-#blogpost-detail #text img.middle {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 1rem 0 1rem 1rem;
 }
 
 #author {
@@ -1997,7 +2063,12 @@ footer a {
         text-align: center;
     }
 
+<<<<<<< HEAD
     #short-info-text {
+=======
+    #short-info p {
+        font-size: 1.6rem;
+>>>>>>> 3f0a3c78d6baeac482171dbb67ca440b7d2f59ca
         text-align: center;
     }
 
