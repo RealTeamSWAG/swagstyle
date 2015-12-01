@@ -539,7 +539,7 @@ input {font-size: 15px;}
 }
 
 #partners-logos img {
-    width: 15%;
+    width: 10%;
 
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
@@ -579,7 +579,7 @@ footer {
 footer h3 {
     font-size: 2rem;
     text-transform: uppercase;
-    padding: 5rem 0;
+    padding: 2rem 0 0;
     color: #626eb5;     
 }
 
@@ -588,12 +588,26 @@ footer h3 {
 }
 
 #organisors #logo-okb {
+}
+
+#organisors #logo-okb img {
+    margin: auto;
+    display: block;
     width: 20rem;
     height: 20rem;
-    margin: auto;
-    display:block;
-    background: transparent url('../images/logo-white.png') center top no-repeat;
-    background-size: 100% 100%;
+    -webkit-transition: all 0.3s ease-in-out; /* Safari and Chrome */
+    -moz-transition: all 0.3s ease-in-out; /* Firefox */
+    -ms-transition: all 0.3s ease-in-out; /* IE 9 */
+    -o-transition: all 0.3s ease-in-out; /* Opera */
+    transition: all 0.3s ease-in-out;
+}
+
+#organisors #logo-okb img:hover {
+    -webkit-transform:scale(1.1); /* Safari and Chrome */
+    -moz-transform:scale(1.1); /* Firefox */
+    -ms-transform:scale(1.1); /* IE 9 */
+    -o-transform:scale(1.1); /* Opera */
+    transform:scale(1.1);
 }
 
 #organisors #CoC-page {
@@ -1577,6 +1591,10 @@ footer a {
     #mc_embed_signup h2 {
         font-size: 1.5rem !important;
     }
+
+    #partners-logos img {
+        width: 13%;
+    }
 }
 
 @media screen and (max-width: 1100px) {
@@ -1669,6 +1687,10 @@ footer a {
         padding-top: 15rem;
         margin-top: -13rem;
     }
+
+    #partners-logos img {
+        width: 15%;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -1720,6 +1742,23 @@ footer a {
 
     .logos .square:nth-child(4n) {
         margin-right: 2%;
+    }
+
+    #decoration {
+        display: none;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    footer p {
+        left: 0;
+        width: 100%;
+    }
+
+    #partners-logos img {
+        width: 17%;
     }
 }
 
@@ -1773,20 +1812,7 @@ footer a {
     }
 
     #partners-logos img {
-        width: 25%;
-    }
-
-    #decoration {
-        display: none;
-    }
-
-    footer {
-        text-align: center;
-    }
-
-    footer p {
-        left: 0;
-        width: 100%;
+        width: 20%;
     }
 
     #categories {
@@ -1975,7 +2001,7 @@ footer a {
     }
 
     #partners-logos img {
-        width: 30%;
+        width: 25%;
     }
 
     #map {
@@ -2099,7 +2125,7 @@ footer a {
     }
 
     #partners-logos img {
-        width: 40%;
+        width: 35%;
     }
 
     #hamburger-menu li a {
