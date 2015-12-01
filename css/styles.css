@@ -1508,7 +1508,7 @@ footer a {
         font-size: 5rem;
     }
 
-    #hamburger-menu a {
+    #hamburger-menu li a {
         font-size: 2rem;
     }
 }
@@ -1576,6 +1576,32 @@ footer a {
 
     #mc_embed_signup h2 {
         font-size: 1.5rem !important;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    #center {
+        display: none;
+    }
+
+    #right li {
+        display: none;
+    }
+
+    #hamburger-menu-logo {
+        display: block;
+    }
+
+    #navigation-fixed {
+        position: relative;
+    }
+
+    #hero-small #navbar {
+        margin-top: 12rem;
+    }
+
+    #hero-small #title {
+        padding-top: 0;
     }
 }
 
@@ -1649,6 +1675,7 @@ footer a {
     #hero-small {
         min-height: 30rem;
     }
+
     #event ul {
         margin-left: 7.5%;
         margin-right: 0%;
@@ -1658,30 +1685,6 @@ footer a {
     #event p {
         text-align: center;
         width: 100%;
-    }
-
-    #center {
-        display: none;
-    }
-
-    #right li {
-        display: none;
-    }
-
-    #hamburger-menu-logo {
-        display: block;
-    }
-
-    #navigation-fixed {
-        position: relative;
-    }
-
-    #hero-small #navbar {
-        margin-top: 12rem;
-    }
-
-    #hero-small #title {
-        padding-top: 0;
     }
 
     #author h3 {
@@ -2099,12 +2102,8 @@ footer a {
         width: 40%;
     }
 
-    #hamburger-menu a {
+    #hamburger-menu li a {
         font-size: 2rem;
-    }
-
-    #hamburger-menu li:not(:first-child) {
-        margin-top: 20%;
     }
 }
 
