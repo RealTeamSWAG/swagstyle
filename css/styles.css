@@ -393,8 +393,8 @@ h2 {
     font-size: 1.6rem;
     font-weight: lighter;
     font-family: 'Montserrat', sans-serif;
-    width: 60%;
-    padding: 8rem 20%;
+    width: 50%;
+    padding: 8rem 25%;
 }
 
 #short-info h3 {
@@ -410,14 +410,16 @@ h2 {
 
 #short-info ul {
     list-style-type: circle;
-    font-size: 1.5rem;
     font-weight: bold;
-    margin-left: 4rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    display:inline-table;
 }
 
 #short-info ul li {
-    float: left;
+    display: inline;
+    font-size: 2rem;
+    margin-right: 2rem;
+    text-transform: uppercase;
 }
 
 #when-where {
