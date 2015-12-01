@@ -565,7 +565,7 @@ footer h3 {
     padding-bottom: 5rem;  
 }
 
-#organisors a {
+#organisors #logo-okb {
     width: 20rem;
     height: 20rem;
     margin: auto;
@@ -574,8 +574,17 @@ footer h3 {
     background-size: 100% 100%;
 }
 
-#organisors a:hover {
+#organisors #logo-okb:hover {
    background-image: url('../images/logo-green-red-vertical.png');
+}
+
+#organisors #CoC-page {
+    color: #626eb5;
+    font-size: 1.3rem;
+}
+
+#organisors #CoC-page:hover {
+    color: #83b2de;
 }
 
 footer p {
@@ -1123,6 +1132,58 @@ footer a {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.3rem;
     color: #2f4086;
+    margin-left: 7rem;
+}
+
+/*
+ * Code of Conduct
+ */
+
+#CoC {
+    max-width: 100rem;
+    margin: auto;
+}
+
+#CoC h3:first-child  {
+    margin-top: 0rem;
+}
+
+#CoC h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    color: #2f4086;
+    border-bottom: solid #2f4086 0.5rem;
+
+    display:inline-block;
+    margin: 3rem auto;
+}
+
+#CoC h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: #2f4086;
+    margin: 1.5rem 0;
+    margin-left: 7rem;
+}
+
+#CoC a {
+    color: rgb(0, 0, 238);
+    text-decoration: none;
+}
+
+#CoC a:hover {
+    color: #83b2de;
+}
+
+#CoC p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    color: #2f4086;
+    margin-left: 7rem;
+}
+
+#CoC #spacings p {
+    margin: 0.75rem 0;
     margin-left: 7rem;
 }
 
