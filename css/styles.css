@@ -1144,6 +1144,10 @@ footer a {
     margin-bottom: 5rem;
 }
 
+#event-title {
+    text-align: center;
+}
+
 #event h3 {
     margin-bottom: 3rem;
 
