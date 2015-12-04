@@ -393,8 +393,8 @@ h2 {
     font-size: 1.6rem;
     font-weight: lighter;
     font-family: 'Montserrat', sans-serif;
-    width: 50%;
-    padding: 8rem 25%;
+    width: 60%;
+    padding: 8rem 20%;
 }
 
 #short-info h3 {
@@ -515,7 +515,7 @@ h2 {
     background: #383838; 
     color: white;
     padding: 3rem;
-    }
+}
 #mc_embed_signup a {text-decoration: none; color: #c93f3f; font-size: 12px; font-family: 'Montserrat';}
 #mc_embed_signup a:hover {color: #383838;}
 #mc_embed_signup p:last-of-type {margin-bottom: 3rem;}
@@ -533,6 +533,7 @@ input {font-size: 15px;}
 #mc_embed_signup .mc-field-group input:first-child:focus {outline:0 !important;}
 #mc_embed_signup div.mce_inline_error {display: none!important;}
 .mc-field-group #mc-embedded-subscribe {float: left !important; clear:none !important; border-radius: 0 !important; width: 18% !important; padding: 0 !important; height: 35px !important; background-color: #c93f3f !important;}
+.mc-field-group #mc-embedded-subscribe:hover {background-color: #626eb5 !important;}
 #mc_embed_signup div.response {color: white!important;padding: 0!important;margin: 0!important;text-transform: initial!important;}
 
 /*
@@ -582,6 +583,7 @@ input {font-size: 15px;}
 
 #map {
     height: 40rem;
+    width: 100%;
 }
 
 /*
@@ -1647,6 +1649,10 @@ footer a {
 }
 
 @media screen and (max-width: 1000px) {
+    #short-info ul li {
+        font-size: 1.7rem;
+    }
+
     #short-info h3 {
         font-size: 2.5rem;
     }
@@ -1961,8 +1967,8 @@ footer a {
 }
 
 @media screen and (max-width: 500px) {
-    #short-info ul {
-        margin-left: 5rem;
+    #short-info ul li {
+        font-size: 1.4rem;
     }
 
     #mc_embed_signup .mc-field-group input:first-child {
