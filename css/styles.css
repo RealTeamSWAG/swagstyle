@@ -724,6 +724,7 @@ footer a {
     width: 100%;
     background-color: white;
     float: left;
+    text-align: left;
 }
 
 .text {
