@@ -1193,8 +1193,14 @@ footer a {
     font-size: 1.3rem;
 }
 
+#speaker-blocks {
+    display: flex;
+    justify-content: center;
+}
+
 #speakers-title {
     margin: 4rem 0;
+    text-align: center;
 
     font-family: 'Montserrat', sans-serif;
     font-size: 3.5rem;
@@ -1674,13 +1680,13 @@ footer a {
         margin-right: 4%;
     }
 
-    #speakers .speaker:not(:nth-child(2n+1)) {
+    /*#speakers .speaker:not(:nth-child(2n+1)) {
         margin-right: 4% !important;
     }
 
     #speakers .speaker:not(:nth-child(2n)) {
         margin-right: 0rem !important;
-    }
+    }*/
 
     #programme, #speaker {
         width: 100%;
@@ -1814,9 +1820,14 @@ footer a {
         font-size: 3rem;
     }
 
-    #speakers h3 {
-        font-size: 3rem;
+    #speaker-blocks {
+        display: block;
+        justify-content: center;
     }
+
+    /*#speakers h3 {
+        font-size: 3rem;
+    }*/
 
     .speaker {
         width: 100%;
