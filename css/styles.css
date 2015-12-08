@@ -1192,7 +1192,8 @@ footer a {
     float: left;
     font-family: 'Montserrat', sans-serif;
     color: #2f4086;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
+    line-height: 2rem;
 }
 
 #speaker-blocks {
@@ -1406,11 +1407,11 @@ footer a {
     border-right: 5px solid transparent
 }
 .timetable aside li {
+    display: flex;
+    align-items: center;
     padding: 5px 15px;
     background-color: #EFEFEF;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 15rem;
+
 }
 .timetable aside li:not(:last-of-type) {
     border-bottom: 1px solid #fff
