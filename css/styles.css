@@ -1219,26 +1219,53 @@ footer a {
     margin: auto;
 }
 
+.about-question {
+    text-align: center;
+}
+
 .about-question:first-child h3 {
     margin-top: 0rem;
 }
 
 .about-question h3 {
+
     font-family: 'Montserrat', sans-serif;
     font-size: 3rem;
     color: #2f4086;
-    border-bottom: solid #2f4086 0.5rem;
 
     display:inline-block;
     margin: 3rem auto;
 }
 
 .about-question p {
+    text-align: left;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.6rem;
     line-height: 2rem;
     color: #2f4086;
-    margin-left: 7rem;
+    width: 80%;
+    margin-left: 10%;
+}
+
+#about-tickets {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+#about-tickets a {
+    padding: 1rem 2rem;
+
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+
+    color: white;
+    background-color: #c93f3f;
+}
+
+#about-tickets a:hover {
+    background-color: #626eb5;
 }
 
 /*
@@ -1762,15 +1789,13 @@ footer a {
         font-size: 1.5rem;
     }
 
-    .about-question {
-        text-align: center;
-    }
-
     .about-question h3 {
         font-size: 2.3rem;
     }
 
     .about-question p {
+        text-align: center;
+        width: 100%;
         margin-left: 0;
     }
 
