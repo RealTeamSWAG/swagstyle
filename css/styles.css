@@ -1104,6 +1104,7 @@ footer a {
 #blogpost-detail #text img {
     display: block;
     margin: 1rem auto;
+    max-width: 100%;
 }
 
 #blogpost-detail #text img.left {
