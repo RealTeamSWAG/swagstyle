@@ -34,7 +34,7 @@ gulp.task('default', defaultJobs);
 gulp.task('build', defaultJobs);
 
 gulp.task('sass', function() {
-    return gulp.src(__dirname + '/css/*.css')
+    return gulp.src(__dirname + '/css/*.scss')
     .on('error', standardHandler)
     .pipe(
         sass( {
