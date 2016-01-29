@@ -550,10 +550,11 @@ input {font-size: 15px;}
 #partners {
     background-color: #f8f8f8;
     text-align: center;
-    padding: 5rem 0;
+    padding: 10rem 0;
     
     h3 {
         font-size: 2rem;
+        text-transform: uppercase;
         font-family: 'Montserrat', sans-serif;
         padding-bottom: 3rem;
         color: #626eb5;
@@ -561,10 +562,29 @@ input {font-size: 15px;}
 }
 
 #partners-logos {
-    width: 100%;
+    width: 80%;
+    margin-left: 10%; 
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    
+    @media screen and (max-width:768px) {
+        width: 90%;
+        margin-left: 5%;
+    }
+    
+    a {
+        margin-right: 2em;   
+        margin-top: 1em; 
+    }
     
     img {
-        width: 10%;
+        width: 150px;
         -webkit-filter: grayscale(100%);
         -moz-filter: grayscale(100%);
         -ms-filter: grayscale(100%);
@@ -1383,18 +1403,19 @@ footer {
     padding: 0;
     margin: 0;
     list-style: none; 
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
     -webkit-flex-flow: row wrap;
-    justify-content: space-around;
+    flex-flow: row wrap;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
     
     li {
-        padding: 5px;
-        width: 200px;
-        height: 120px;
+        padding: 1em;
+        height: 150px;
+        width: 150px;
         margin-top: 10px;
         
         img {
@@ -1677,10 +1698,6 @@ footer {
     #mc_embed_signup h2 {
         font-size: 1.5rem !important;
     }
-
-    #partners-logos img {
-        width: 13%;
-    }
 }
 
 @media screen and (max-width: 1100px) {
@@ -1781,10 +1798,6 @@ footer {
         padding-top: 15rem;
         margin-top: -13rem;
     }
-
-    #partners-logos img {
-        width: 15%;
-    }
 }
 
 @media screen and (max-width: 900px) {
@@ -1834,9 +1847,6 @@ footer {
         width: 100%;
     }
 
-    #partners-logos img {
-        width: 17%;
-    }
 }
 
 @media screen and (max-width: 750px) {
@@ -1891,10 +1901,6 @@ footer {
 
     #programme, #speaker {
         height: 40rem;
-    }
-
-    #partners-logos img {
-        width: 20%;
     }
 
     #categories {
@@ -2086,10 +2092,6 @@ footer {
         height: 35rem;
     }
 
-    #partners-logos img {
-        width: 25%;
-    }
-
     #map {
         height: 20rem;
     }
@@ -2195,11 +2197,7 @@ footer {
     #programme, #speaker {
         height: 25rem;
     }
-
-    #partners-logos img {
-        width: 35%;
-    }
-
+    
     #hamburger-menu li a {
         font-size: 2rem;
     }
