@@ -3,6 +3,13 @@
  */
  
  @import url(https://fonts.googleapis.com/css?family=Arvo:400,400italic,700);
+ 
+ $blue-color: #2f4086;
+ $blue-color-light: #323e65;
+ $blue-color-lightest: #626eb5;
+ $blue-color-lightester: #83b2de;
+ $grey-color: #383838;
+ $red-color: #c93f3f;
 
 /**
  * RESET
@@ -79,7 +86,7 @@ a:focus {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-color: #323e65; 
+    background-color: $blue-color-light; 
 }
 
 #hero-small {
@@ -93,7 +100,7 @@ a:focus {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-color: #323e65; 
+    background-color: $blue-color-light; 
     
      #title {
         padding-top: 15rem;
@@ -147,14 +154,19 @@ a:focus {
 #center {
     text-align: center;
     
-    li:not(:last-of-type) {
-        margin-right: 10rem;   
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    margin-right: 3rem;
+    
+    li {
+        flex-grow: 1;
     }
 }
 
 .nav {
     line-height: 5rem;
-
     font-size: 1.5rem;
     text-decoration: none;
     text-transform: uppercase;
@@ -164,21 +176,20 @@ a:focus {
     color: white;
     
     &:hover {
-        color: #626eb5;
+        color: $blue-color-lightest;
     }
 }
 
 .nav-low {
     line-height: 5rem;
-
     font-size: 1.5rem;
     text-decoration: none;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
-    color: #383838;
+    color: $grey-color;
     
     &:hover {
-        color: #626eb5;
+        color: $blue-color-lightest;
     }
 }
 
@@ -196,10 +207,10 @@ a:focus {
             font-family: 'Montserrat', sans-serif;
         
             color: white;
-            background-color: #c93f3f;
+            background-color: $red-color;
             
             &:hover {
-                background-color: #626eb5;
+                background-color: $blue-color-lightest;
             }
         }
     }
@@ -232,7 +243,7 @@ a:focus {
     height: 100%;
     z-index: 100;
 
-    background-color: #83b2de;
+    background-color: $blue-color-lightester;
     
     #home {
         position: absolute;
@@ -259,10 +270,10 @@ a:focus {
             &:last-of-type {
                 a {
                     padding: 1rem 2rem;
-                    background-color: #c93f3f;
+                    background-color: $red-color;
                     
                     &:hover {
-                        background-color: #626eb5;
+                        background-color: $blue-color-lightest;
                     }
                 }
             }
@@ -368,10 +379,10 @@ h2 {
         font-family: 'Montserrat', sans-serif;
     
         color: white;
-        background-color: #c93f3f;
+        background-color: $red-color;
         
         &:hover {
-            background-color: #626eb5;
+            background-color: $blue-color-lightest;
         }
     }
 }
@@ -395,7 +406,7 @@ h2 {
  */
 
 #short-info {
-    background-color: #383838;
+    background-color: $grey-color;
     color: white;
     font-size: 1.6rem;
     font-weight: lighter;
@@ -447,7 +458,7 @@ h2 {
         padding-left: 3rem;
         font-size: 2rem;
         text-transform: uppercase;
-        color: #626eb5;
+        color: $blue-color-lightest;
     }
     
     p {
@@ -488,10 +499,10 @@ h2 {
         font-family: 'Montserrat', sans-serif;
     
         color: white;
-        background-color: #383838;
+        background-color: $grey-color;
         
         &:hover {
-            background-color: #626eb5;
+            background-color: $blue-color-lightest;
         }
     }
 }
@@ -518,12 +529,12 @@ h2 {
  */
 
 #mc_embed_signup {
-    background: #383838; 
+    background: $grey-color; 
     color: white;
     padding: 3rem;
 }
-#mc_embed_signup a {text-decoration: none; color: #c93f3f; font-size: 12px; font-family: 'Montserrat';}
-#mc_embed_signup a:hover {color: #383838;}
+#mc_embed_signup a {text-decoration: none; color: $red-color; font-size: 12px; font-family: 'Montserrat';}
+#mc_embed_signup a:hover {color: $grey-color;}
 #mc_embed_signup p:last-of-type {margin-bottom: 3rem;}
 #mc_embed_signup{clear:left; font-size: 14px; font-family: 'Montserrat', sans-serif; text-transform: uppercase; text-align: center;}
 #mc_embed_signup p {font-size: 12px;font-family: 'Montserrat', sans-serif; color: white; font-weight: bold;}
@@ -532,14 +543,14 @@ input {font-size: 15px;}
 #mc_embed_signup_scroll{text-align: center; width: 100%;}
 #mc_embed_signup form {padding: 5rem 0 !important; width: 60% !important; margin: auto;}
 #mc_embed_signup .mc-field-group {clear: none; width: 44.5rem; margin: auto; text-align: center; padding-bottom: 0 !important;}
-#mc_embed_signup .button {clear: none; background-color: #c93f3f;}
-#mc_embed_signup .button:hover {background-color: #383838;}
+#mc_embed_signup .button {clear: none; background-color: $red-color;}
+#mc_embed_signup .button:hover {background-color: $grey-color;}
 #mc_embed_signup .button:focus {outline:0 !important;}
 #mc_embed_signup .mc-field-group input:first-child {float: left; width: calc(80% - 2px) !important; margin: 0 !important;}
 #mc_embed_signup .mc-field-group input:first-child:focus {outline:0 !important;}
 #mc_embed_signup div.mce_inline_error {display: none!important;}
-.mc-field-group #mc-embedded-subscribe {float: left !important; clear:none !important; border-radius: 0 !important; width: 18% !important; padding: 0 !important; height: 35px !important; background-color: #c93f3f !important;}
-.mc-field-group #mc-embedded-subscribe:hover {background-color: #626eb5 !important;}
+.mc-field-group #mc-embedded-subscribe {float: left !important; clear:none !important; border-radius: 0 !important; width: 18% !important; padding: 0 !important; height: 35px !important; background-color: $red-color !important;}
+.mc-field-group #mc-embedded-subscribe:hover {background-color: $blue-color-lightest !important;}
 #mc_embed_signup div.response {color: white!important;padding: 0!important;margin: 0!important;text-transform: initial!important;}
 
 /*
@@ -557,7 +568,7 @@ input {font-size: 15px;}
         text-transform: uppercase;
         font-family: 'Montserrat', sans-serif;
         padding-bottom: 3rem;
-        color: #626eb5;
+        color: $blue-color-lightest;
     }
 }
 
@@ -616,7 +627,7 @@ input {font-size: 15px;}
 
 footer {
     position: relative;
-    background-color: #383838; 
+    background-color: $grey-color; 
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     
@@ -624,7 +635,7 @@ footer {
         font-size: 2rem;
         text-transform: uppercase;
         padding: 2rem 0 0;
-        color: #626eb5;     
+        color: $blue-color-lightest;     
     }
     
     p {
@@ -635,10 +646,10 @@ footer {
     }
     
     span {
-        color: #626eb5;
+        color: $blue-color-lightest;
         
         &:hover {
-            color: #83b2de;
+            color: $blue-color-lightester;
         }
     }
     
@@ -674,11 +685,11 @@ footer {
     }   
 
     #CoC-page {
-        color: #626eb5;
+        color: $blue-color-lightest;
         font-size: 1.3rem;
         
         &:hover {
-            color: #83b2de;
+            color: $blue-color-lightester;
         }
     }
 }
@@ -695,8 +706,8 @@ footer {
  */
 
 .container {
-    width: 95%;
-    margin: 5rem auto;
+    width: 96%;
+    margin: 5rem 2%;
 }
 
 .speaker {
@@ -755,7 +766,7 @@ footer {
         font-size: 1.8rem;
         text-transform: uppercase;
         font-family: 'Montserrat', sans-serif;
-        color: #83b2de;
+        color: $blue-color-lightester;
     }
     
     p {
@@ -836,7 +847,7 @@ footer {
 /* back, initially hidden pane */
 .back {
     transform: rotateY(180deg);
-    background-color: #83b2de;
+    background-color: $blue-color-lightester;
     
     h3 {
         font-size: 1.8rem;
@@ -879,7 +890,7 @@ footer {
         text-transform: uppercase;
         font-family: 'Montserrat', sans-serif;
         font-weight: bolder;
-        color: #2f4086;
+        color: $blue-color;
         text-decoration: none;
         
         &:before {
@@ -889,7 +900,7 @@ footer {
             height: 2px;
             bottom: 0;
             left: 0;
-            background-color: #2f4086;
+            background-color: $blue-color;
             visibility: hidden;
             -webkit-transform: scaleX(0);
             transform: scaleX(0);
@@ -909,7 +920,7 @@ footer {
     font-size: 3.5rem;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
-    color: #2f4086;
+    color: $blue-color;
 
     margin: 2rem;
 }
@@ -940,7 +951,6 @@ footer {
     transform: translate(-50%, -50%);
     padding: 2rem;
     width: 30%;
-
     background-color: white;
 }
 
@@ -980,7 +990,7 @@ footer {
     font-family: 'Montserrat', sans-serif;
     
     span {
-        color: #2f4086;
+        color: $blue-color;
     }
 }
 
@@ -1061,7 +1071,7 @@ footer {
     font-size: 1.5rem;
     
     span {
-        color: #2f4086;
+        color: $blue-color;
     }
 }
 
@@ -1070,6 +1080,11 @@ footer {
     width: 7.5%;
     margin-top: 8rem;
     margin-left: 2.5%;
+    
+    .fb-share-btn {
+        cursor: hand;
+        cursor: pointer;
+    }
     
     h3 {
         font-family: 'Montserrat', sans-serif;
@@ -1127,10 +1142,10 @@ footer {
         
         a {
             text-decoration: none;
-            color: #626eb5;
+            color: $blue-color-lightest;
             
             &:hover {
-                color: #83b2de;
+                color: $blue-color-lightester;
             }
         }
         
@@ -1196,14 +1211,93 @@ footer {
         height: auto;
         min-height: 100px;
         min-width: 100px;
-        
-        /*
-        object-fit: none; 
-        object-position: center; 
-        height: 100px;
-        width: 100px;*/
     }
 }
+
+/*
+ * TWITTER WALL
+ */
+ 
+#twitter-wall {
+    margin-top: -20px;
+    font-size: 1.5em;
+    
+    &>ul {
+        list-style: none;
+        padding: 0;
+        
+        li {
+            display: block;
+            margin-bottom: 15px;
+            
+            &>div {
+                overflow: hidden;
+                
+                .twitter-left, .twitter-center, .twitter-right {
+                    background-color: white;
+                    padding: 1em 0;
+                    padding-bottom: 1000px;
+                    margin-bottom: -1000px;
+                    height: 100%;
+                    line-height: 1.4em;
+                    float: left;
+                    
+                    &>div {
+                        padding: 0 2em;
+                        font-size: 1em;
+                        line-height: 1.4em;
+                    }
+                    
+                    @media screen and (max-width: 767px) {
+                        padding-left: 1em;
+                        padding-right: 1em;    
+                    }
+                    
+                    .bottom-spacer {
+                        display: block;
+                        margin-bottom: 1em;
+                    }
+                }
+                
+                .twitter-left {
+                    background-color: $blue-color-light;
+                    width: 25%;
+                    color: white;
+                    
+                    a {
+                        color: white;
+                        
+                        &:hover {
+                            color: white;
+                        }
+                    }
+                }
+                
+                .twitter-center {
+                    width: 60%;
+                    
+                    a {
+                        color: $blue-color-lightest;
+                        text-decoration: none;
+                        
+                        &:hover {
+                            color: $blue-color-lightester;
+                        }
+                    }
+                    
+                    img {
+                        margin-top: 1em;
+                        max-width: 100%;
+                    }
+                }
+                
+                .twitter-right {
+                    width: 15%;
+                }        
+            }
+        }
+    }
+} 
 
 /*
  * EVENT
@@ -1219,7 +1313,7 @@ footer {
         font-family: 'Montserrat', sans-serif;
         font-size: 3.5rem;
         text-transform: uppercase;
-        color: #2f4086;
+        color: $blue-color;
         
         &:not(:first-child) {
             font-size: 2.5rem;
@@ -1243,7 +1337,7 @@ footer {
     
     li {
         font-family: 'Montserrat', sans-serif;
-        color: #2f4086;
+        color: $blue-color;
         font-size: 1.5rem;
         font-weight: bolder;
         margin-bottom: 2.5rem;
@@ -1255,7 +1349,7 @@ footer {
         width: 70%;
         float: right;
         font-family: 'Montserrat', sans-serif;
-        color: #2f4086;
+        color: $blue-color;
         font-size: 1.6rem;
         line-height: 2rem;
         margin-bottom: 1rem;
@@ -1278,7 +1372,7 @@ footer {
     font-family: 'Montserrat', sans-serif;
     font-size: 3.5rem;
     text-transform: uppercase;
-    color: #2f4086;
+    color: $blue-color;
 }
 
 /*
@@ -1300,7 +1394,7 @@ footer {
     h3 {  
         font-family: 'Montserrat', sans-serif;
         font-size: 3rem;
-        color: #2f4086;
+        color: $blue-color;
         display:inline-block;
         margin: 3rem auto;
     }
@@ -1310,7 +1404,7 @@ footer {
         font-family: 'Montserrat', sans-serif;
         font-size: 1.6rem;
         line-height: 2rem;
-        color: #2f4086;
+        color: $blue-color;
         width: 80%;
         margin-left: 10%;
     }
@@ -1327,10 +1421,10 @@ footer {
         text-transform: uppercase;
         font-family: 'Montserrat', sans-serif;
         color: white;
-        background-color: #c93f3f;
+        background-color: $red-color;
         
         &:hover {
-            background-color: #626eb5;
+            background-color: $blue-color-lightest;
         }
     }
 }
@@ -1346,8 +1440,8 @@ footer {
     h3 {
         font-family: 'Montserrat', sans-serif;
         font-size: 3.5rem;
-        color: #2f4086;
-        border-bottom: solid #2f4086 0.5rem;
+        color: $blue-color;
+        border-bottom: solid $blue-color 0.5rem;
     
         display:inline-block;
         margin: 3rem auto;
@@ -1360,7 +1454,7 @@ footer {
     h4 {
         font-family: 'Montserrat', sans-serif;
         font-size: 2rem;
-        color: #2f4086;
+        color: $blue-color;
         margin: 1.5rem 0;
         margin-left: 7rem;
     }
@@ -1370,14 +1464,14 @@ footer {
         text-decoration: none;
         
         &:hover {
-            color: #83b2de;
+            color: $blue-color-lightester;
         }
     }
     
     p {
         font-family: 'Montserrat', sans-serif;
         font-size: 1.3rem;
-        color: #2f4086;
+        color: $blue-color;
         margin-left: 7rem;
     }
     
@@ -1398,7 +1492,7 @@ footer {
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     font-weight: bolder;
-    color: #2f4086;
+    color: $blue-color;
 }
 
 .flex-container {
@@ -1592,7 +1686,7 @@ footer {
     background-position: -2px 0
 }
 .timetable .time-entry {
-    background-color: #83b2de;
+    background-color: $blue-color-lightester;
     transition: 200ms background-color;
     height: 45px;
     display: block;
@@ -1618,7 +1712,7 @@ footer {
     font-size: 1.6rem;
 }
 .timetable .time-entry:hover {
-    background-color: #383838;
+    background-color: $grey-color;
 }
 
 @media screen and (max-height: 850px) {
@@ -1871,10 +1965,6 @@ footer {
         justify-content: center;
     }
 
-    /*#speakers h3 {
-        font-size: 3rem;
-    }*/
-
     .speaker {
         width: 100%;
     }
@@ -1973,15 +2063,15 @@ footer {
         margin-top: 0;
         margin-left: 2.5%;
         width: 95%;
-    }
-
-    #social-media h3 {
-        border-top: none;
-        font-size: 2rem;
-    }
-
-    #social-media img {
-        width: 4rem;
+        
+        h3 {
+            border-top: none;
+            font-size: 2rem;
+        }
+        
+        img {
+            width: 4rem;
+        }
     }
 
     #blogpost-detail {
@@ -2224,7 +2314,7 @@ footer {
  }
  
  .pagination > li:hover,  .pagination > li.active {
-     background-color: #383838;
+     background-color: $grey-color;
  }
  
   .pagination > li > a,   
