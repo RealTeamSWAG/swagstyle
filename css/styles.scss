@@ -1044,6 +1044,34 @@ footer {
 }
 
 /*
+ * PRESENTATIONS
+ */
+ 
+.presentations {
+     
+    text-align: left;
+    font-family: 'Karla', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.18;
+    letter-spacing: -0.003em;
+
+    width: 80%;
+    margin-left: 10%;
+    li {
+        margin-bottom: 10px;
+        a {
+            color: $blue-color;
+            font-size: 1.4rem;
+            text-decoration: none;
+            
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+/*
  * BLOGPOST
  */
 
